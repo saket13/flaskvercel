@@ -1,5 +1,3 @@
-import constants
-
 from api_integrations.twitter.public import TwitterAPIHandler
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from textblob import TextBlob
