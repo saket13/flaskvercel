@@ -1,7 +1,8 @@
-import os
+from dotenv import load_dotenv, find_dotenv
 from core_bloc.utils import TwitterSentimentAnalyzer
 from flask import Flask, request, jsonify
 
+load_dotenv(find_dotenv())
 app = Flask(__name__)
 
 @app.route("/")
